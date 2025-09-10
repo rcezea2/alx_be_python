@@ -7,4 +7,4 @@ savings =  income - expenses
 annual_savings = savings * 12 + (savings * 12 * 0.05)
 
 print("Your monthly savings are ${}.".format(savings))
-print("Projected savings after one year, with interest, is: ${}.".format(round(annual_savings)))
+print("Projected savings after one year, with interest, is: ${}.".format(annual_savings))
