@@ -2,13 +2,13 @@
 
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-operation = input("Choose the operation (+, -, *, /): ")
+op = input("Choose the operation (+, -, *, /): ")
 
 
-def do_math(x, a, b):
+def do_math(operation, a, b):
     result = 'The result is {}'
 
-    match x:
+    match operation:
         case '+':
             print(result.format(a + b))
 
@@ -25,4 +25,4 @@ def do_math(x, a, b):
                 print(result.format(a / b))
 
 
-do_math(operation, num1, num2)
+do_math(op, num1, num2)
