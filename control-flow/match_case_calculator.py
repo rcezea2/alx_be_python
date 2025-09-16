@@ -6,7 +6,7 @@ op = input("Choose the operation (+, -, *, /): ")
 
 
 def do_math(operation, a, b):
-    result = 'The result is {}'
+    result = 'The result is {}.'
 
     match operation:
         case '+':
