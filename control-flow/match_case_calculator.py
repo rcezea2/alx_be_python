@@ -2,7 +2,7 @@
 
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
-op = input("Choose the operation (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ")
 
 
 def do_math(x, a, b):
@@ -25,4 +25,4 @@ def do_math(x, a, b):
                 print(result.format(a / b))
 
 
-do_math(op, num1, num2)
+do_math(operation, num1, num2)
