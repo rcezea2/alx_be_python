@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 
 size = int(input('Enter the size of the pattern: '))
+i = 0
 
-for i in range(size):
-    print('*' * size)
+while i < size:
+    for _ in range(size):
+        print("*", end="")
+    print()
+    i += 1
