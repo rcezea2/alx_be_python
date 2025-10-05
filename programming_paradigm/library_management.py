@@ -34,6 +34,7 @@ class Library:
                 self.__books.append(book)
                 self.__checked_out.pop(idx)
                 break
+        return True
 
 
     def list_available_books(self):
