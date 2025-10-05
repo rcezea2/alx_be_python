@@ -11,18 +11,18 @@ class Book:
 
 class Library:
     def __init__(self):
-        self.__books = []
-        self.__checked_out = []
+        self._books = []
+        self._checked_out = []
 
     def add_book(self, book: Book):
-        self.__books.append(book)
+        self._books.append(book)
 
     def check_out_book(self, title):
-        for book in self.__books:
+        for book in self._books:
             if book.title == title:
-                idx = self.__books.index(book)
-                self.__checked_out.append(book)
-                self.__books.pop(idx)
+                idx = self._books.index(book)
+                self._checked_out.append(book)
+                self._books.pop(idx)
                 break
         else:
             print(f"{title} is not available")
@@ -31,15 +31,15 @@ class Library:
         pass
 
     def return_book(self, title):
-        for book in self.__checked_out:
+        for book in self._checked_out:
             if book.title == title:
-                idx = self.__checked_out.index(book)
-                self.__books.append(book)
-                self.__checked_out.pop(idx)
+                idx = self._checked_out.index(book)
+                self._books.append(book)
+                self._checked_out.pop(idx)
                 break
         return True
 
 
     def list_available_books(self):
-        for book in self.__books:
+        for book in self._books:
             print(book)
